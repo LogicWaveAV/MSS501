@@ -1,0 +1,102 @@
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\ProgramInfo.config
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\XPanel_Masters2020.sgd
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.pdb
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.exe
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csprojAssemblyReference.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CoreCompileInputs.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CopyComplete
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.pdb
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\XPanel_Masters2020.sgd
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.pdb
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.xml
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.xml
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csprojAssemblyReference.cache
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CoreCompileInputs.cache
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CopyComplete
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.pdb
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\CrestronOnvif.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat.der
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.dll
+D:\Seafile\Yuri\Crestron\Masters 2020\C#\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.exe
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\CrestronOnvif.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat.der
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csprojAssemblyReference.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CoreCompileInputs.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.pdb
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\XPanel_Masters2020.sgd
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.pdb
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Newtonsoft.Json.Compact.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCWSHelperInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.exe
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Newtonsoft.Json.Compact.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCWSHelperInterface.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CopyComplete
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\CrestronOnvif.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat.der
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csprojAssemblyReference.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CoreCompileInputs.cache
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.pdb
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\XPanel_Masters2020.sgd
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.pdb
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.exe
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.xml
+C:\Users\ystaal\OneDrive - Crestron EMEA\Desktop\Students\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CopyComplete
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\CrestronOnvif.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpData.dat.der
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\XPanel_Masters2020.sgd
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Ex_DeviceRegistration.pdb
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpCustomAttributesInterface.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.exe
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.DeviceSupport.xml
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\Crestron.SimplSharpPro.UI.xml
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpHelperInterface.xml
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\bin\Debug\SimplSharpPro.xml
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csprojAssemblyReference.cache
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CoreCompileInputs.cache
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.csproj.CopyComplete
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.dll
+C:\Users\Mike\Desktop\Lab1_StudentPackage\Student Solution\Ex_DeviceRegistration\Ex_DeviceRegistration\obj\Debug\Ex_DeviceRegistration.pdb

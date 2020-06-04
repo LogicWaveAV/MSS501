@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimplSharpCresStoreClientInterface</name>
+    </assembly>
+    <members>
+        <member name="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult">
+            <summary>
+            Results of method calls.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Unspecified">
+            <summary>
+            General Error
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_InvalidKey">
+            <summary>
+            Key is invalid
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_ValueTooBig">
+            <summary>
+            Buffer is not big enough
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_InvalidJson">
+            <summary>
+            Invalid JSON
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Timeout">
+            <summary>
+            Timeout
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Not_Implemented">
+            <summary>
+            Feature not implemented
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Not_Connected">
+            <summary>
+            Not connected
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Set_Proxy_Error">
+            <summary>
+            Set proxy error
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_JsonSet">
+            <summary>
+            Json set
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_JsonPublish">
+            <summary>
+            Json publish
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Null_Reply">
+            <summary>
+            Null reply
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Error_Reply">
+            <summary>
+            Error reply
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Unexpected_Reply_Type">
+            <summary>
+            Unexpected reply type
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Null_Object">
+            <summary>
+            Null object
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Get_Proxy_Error">
+            <summary>
+            Get proxy error
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eSaveType">
+            <summary>
+            Used in 'Set' operations to make data persistent
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eSaveType.NOT_STORED">
+            <summary>
+            New value will be published to subscribers, but not persistent across reboots
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eSaveType.STORED">
+            <summary>
+            New value will be published to subscribers and persisted across reboots
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClientCallback">
+            <summary>
+            Delegate for subscribing to 'App' updates
+            </summary>
+            <param name="json">The updated value</param>
+            <param name="pObject">User specified object</param>
+        </member>
+        <member name="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient">
+            <summary>
+            This class provides set/get/subscribe operations to the application configuration object
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.#ctor">
+            <summary>
+            Returns an instance of <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Set(System.String,System.Boolean)">
+            <summary>
+            Change the value of the 'App' object
+            </summary>
+            <param name="json">json to be stored</param>
+            <param name="partial">true: entire json object will be written, overwriting any existing values; 
+            false: update existing object with members in the json being written</param>
+            <returns>See <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult"/></returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+            <code>
+            Set("{...}", true);  // overwrite existing 'App' object
+            </code>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Set(System.String,System.Boolean,Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eSaveType)">
+            <summary>
+            Change the value of an object using the specified json
+            </summary>
+            <param name="json">The json to set</param>
+            <param name="partial">true: entire json object will be written, overwriting any existing values; 
+            false: update existing object with members in the json being written</param>
+            <param name="save">Specifies if the object should be saved or only published</param>
+            <returns>See <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult"/></returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Get(Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult@)">
+            <summary>
+            Retrieve the 'App' json configuration
+            </summary>
+            <param name="result">The result code of the request</param>
+            <returns>The serialized 'App' object</returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Get(System.String,System.Boolean,Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult@)">
+            <summary>
+            Retrieves the specified object
+            </summary>
+            <param name="json">The json to retrieve</param>
+            <param name="partial">true: entire json object will be returned;
+            false: only the contents of the json object will be returned</param>
+            <param name="result">The result of the call</param>
+            <returns>The specified object</returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Subscribe(Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClientCallback,System.Object)">
+            <summary>
+            Registers a callback to be invoked whenever 'App' is updated
+            </summary>
+            <param name="cb">Callback to register</param>
+            <param name="obj">Object to be passed back in the callback</param>
+            <returns>See <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult"/></returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+            <exception cref="T:System.ArgumentException">Specified <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClientCallback"/> was NULL</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Subscribe(System.String,Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClientCallback,System.Object)">
+            <summary>
+            Registers a callback to be invoked whenever the specified object is updated
+            </summary>
+            <param name="json">The json object to subscribe to</param>
+            <param name="cb">Callback to register</param>
+            <param name="obj">Object to be passed back in the callback</param>
+            <returns>See <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult"/></returns>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+            <exception cref="T:System.ArgumentException">Specified <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClientCallback"/> was NULL</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.SetResults(System.String)">
+            <summary>
+            Publish a results object for a requested action to the data store
+            </summary>
+            <param name="json">The serialized result object</param>
+            <returns>See <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult"/></returns>
+            <code>
+            // Send result object
+            SetResults("{"Actions":[{"TargetObject":"App","Operation":"SetPartial","Results":[{"Path":"PropertyPath","Property":"MyProperty","StatusId":2,"StatusInfo":"Program reset required"}]}]}");
+            </code>
+            <exception cref="T:System.ObjectDisposedException">This <see cref="T:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient"/> has been disposed</exception>
+            <remarks>returns <see cref="F:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.eCresStoreResult.Failure_Null_Object"/> if specified json was null</remarks>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Dispose">
+            <summary>
+            Disposes the class.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.SimplSharpCresStoreClientInterface.CresStoreClient.Finalize">
+            <summary>
+            CresStoreClient destructor
+            </summary>
+        </member>
+    </members>
+</doc>

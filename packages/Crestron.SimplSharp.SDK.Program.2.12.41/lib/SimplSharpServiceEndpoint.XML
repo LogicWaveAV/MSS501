@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimplSharpServiceEndpoint</name>
+    </assembly>
+    <members>
+        <member name="T:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus">
+            <summary>
+            Service Endpoint Status received from the Service Endpoint native code.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.INVALID_VALUE">
+            <summary>
+            Invalid
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_OK">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_FAIL">
+            <summary>
+            Failed
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_BADPARAMETER">
+            <summary>
+            We passed the native code a bad parameter
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_MEMORYERROR">
+            <summary>
+            Native code memory error
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_MUTEXERROR">
+            <summary>
+            Native code mutex error
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_EMPTYBUFFER">
+            <summary>
+            ERR_EMPTYBUFFER means that everything went "good" just that there was nothing to pass back (ie. Discovery did not find a match.)
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_OUTOFRANGE">
+            <summary>
+            Out of range is when a user is trying to set a setting with a value that is not supported.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_QUERYINPROGRESS">
+            <summary>
+            Query is in progress
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_NOTAUTHORIZED">
+            <summary>
+            Bad authentication.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_UNKNOWNAUTH">
+            <summary>
+            Unknown authentication.  This indicates that an error was received that might be related to authentication, but there is no way to find out.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_NOTIMPLEMENTED">
+            <summary>
+            Not Implemented.  This indicates that the function call was not implemented in the device.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.SERVICE_UUID_EXISTS">
+            <summary>
+            Service Endpoint with the specified UUID already defined
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.SERVICE_INVALID_UUID">
+            <summary>
+            Service Endpoint with the specified UUID not defined
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.ONVIF_SOAP_ERROR">
+            <summary>
+            ONVIF SOAP Error, could not send CRPC Hello/Bye message
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.eServiceEndpointNativeStatus.SERVICE_ENDPOINT_MAX_LIMIT_REACHED">
+            <summary>
+            Maximum Service Endpoint Maximum Limit reached
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint">
+            <summary>
+            Service Endpoint class to create/delete Service Endpoints.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.AddServiceEndpoint(System.IntPtr,System.IntPtr,System.UInt16,System.IntPtr,System.UInt32)">
+            <summary>
+            Adds a Target Service endpoint to the list in the native code with the specified UUID.
+            Maximum length of the "uuid" sting is 36 characters.
+            Maximum length of the "protocolType" and "type" strings shall be 16 characters.
+            If different UUID then creates a new endpoint object, otherwise throws an exception.
+            </summary>
+            <param name="uuid">UUID of the new Service endpoint.</param>
+            <param name="protocolType">Service Protocol Type</param>
+            <param name="portNumber">Port Number</param>
+            <param name="type">Service Type</param>
+            <param name="metadataVersion">Metadata Version</param>
+            <returns>Returns 0 if Service Endpoint object is created successfully, if any error occurs returns the corresponding error code.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.RemoveServiceEndpoint(System.IntPtr)">
+            <summary>
+            Removes the Service Endpoint with the specified paramUuid if exists.
+            Maximum length of the "uuid" shall be 36 characters.
+            </summary>
+            <returns>Returns 0 if Service Endpoint object is removed successfully, else if any error occurs returns the corresponding error code.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ModifyServiceType(System.IntPtr,System.IntPtr)">
+            <summary>
+            Modifies the Service Type for the selected target service endpoint.
+            Maximum length of the "uuid" shall be 36 characters.
+            Maximum length of the "type" shall be 16 characters.
+            </summary>
+            <param name="uuid">UUID of the Service endpoint selected.</param>
+            <param name="type">Service Type to be set.</param>
+            <returns>Returns 0 if Service Type is set successfully, else if any error occurs returns the corresponding error code.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ModifyServiceMetadataVersion(System.IntPtr,System.UInt32)">
+            <summary>
+            Modifies the Metadata Version for the target service endpoint.
+            Maximum length of the "uuid" shall be 36 characters.
+            </summary>
+            <param name="metadataVersion">Service Endpoint Metadata Version to be set.</param>
+            <param name="uuid">UUID of the Service Endpoint selected.</param>
+            <returns>Returns 0 if Service Metadata Version is set successfully, if any error occurs returns the corresponding error code.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.#ctor(System.Guid,System.String,System.UInt16,System.String,System.UInt32)">
+            <summary>
+            Constructor to create a <see cref="T:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint"/> object with the details provided. 
+            </summary>
+            <param name="paramUuid">UUID of the Service Endpoint.</param>
+            <param name="paramProtocolType">Protocol Type for the Service Endpoint, maximum length allowed is 16 characters, e.g. "crpc", "crpcs". The string value passed for this parameter shall not be null or empty.</param>
+            <param name="paramPortNumber">Port Number, value 0 is not valid.</param>
+            <param name="paramType">Type of Service Endpoint, maximum length allowed is 16 characters. e.g. "i:crpc_lighting". The string value passed for this parameter shall not be null or empty.</param>
+            <param name="paramMetadataVersion">Metadata Version, value 0 is not valid.</param>
+            <exception cref="T:System.ArgumentException">Length of the "paramProtocolType" or "paramType" parameter value passed is exceeding maximum length allowed or "paramProtocolType" or "paramType" parameter value passed is null or empty.
+            Or "paramPortNumber" or "paramMetadataVersion" value passed is not valid.</exception>
+            <exception cref="T:System.InvalidOperationException">Error encountered while adding the Service Endpoint.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ToString">
+            <summary>
+            String representation of the Service Endpoint.
+            </summary>
+            <returns>Service Endpoint {UUID} {ProtocolType} {PortNumber} {Type} {MetadataVersion}</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.Dispose">
+            <summary>
+            Clean up of resources.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Error encountered while removing the Service Endpoint.</exception>
+        </member>
+        <member name="F:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint._disposed">
+            <summary>
+            Internal storage of the Disposed flag for this object.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.Dispose(System.Boolean)">
+            <summary>
+            Dispose of the Service Endpoint.
+            </summary>
+            <param name="disposing">True to release both managed and unmanaged resources.
+            False to release only unmanaged resources.</param>
+            <exception cref="T:System.InvalidOperationException">Error encountered while removing the Service Endpoint.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.AddServiceEndpoint(System.String,System.String,System.UInt16,System.String,System.UInt32)">
+            <summary>
+            Method to add a Service Endpoint to the list with the specified UUID.
+            Maximum length of the "paramUuid" string shall be 36 characters.
+            Maximum length of the "paramProtocolType" and "paramType" strings shall be 16 characters.
+            If a Service Endpoint with the specified UUID not already added, then creates a new Service Endpoint object with the specified UUID, otherwise throws an exception with error details.
+            </summary>
+            <param name="paramUuid">UUID of the Service Endpoint to be added.</param>
+            <param name="paramProtocolType">Service Protocol Type, e.g. “Crpc”, “Crpcs”</param>
+            <param name="paramPortNumber">Port Number, e.g. 50000</param>
+            <param name="paramType">Service Type, e.g. “i:crpc_endpoint i:crpc_lights i:crpc_room_bedroom i:crpc_room_kitchen”</param>
+            <param name="paramMetadataVersion">Metadata Version, e.g. 1</param>
+            <returns>Returns 0 if Service Endpoint object is created successfully, else .</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.RemoveServiceEndpoint(System.String)">
+            <summary>
+            Method to remove the Service Endpoint with the specified UUID if exists.
+            Maximum length of the "uuid" string shall be 36 characters.
+            </summary>
+            <param name="uuid">UUID of the Service Endpoint that is to be removed</param>
+            <returns>Returns true if Service Endpoint is removed successfully, otherwise throws an exception with error details.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ModifyServiceType(System.String,System.String)">
+            <summary>
+            Property to modify the Service Type property value for the selected Service Endpoint by the native code.
+            Maximum length of the "paramUuid" string shall be 36 characters.
+            Maximum length of the "paramType" string shall be 16 characters.
+            </summary>
+            <param name="paramUuid">UUID of the selected Service Endpoint.</param>
+            <param name="paramType">Service Type to be set.</param>
+            <returns>Returns true if the Service Type property value is set for the Service Endpoint successfully,  otherwise throws an exception with error details.</returns>
+        </member>
+        <member name="M:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ModifyServiceMetadataVersion(System.String,System.UInt32)">
+            <summary>
+            Method to modify the Metadata Version property value for the specified Service Endpoint by the native code.
+            Maximum length of the "paramUuid" strings shall be 36 characters.
+            </summary>
+            <param name="paramUuid">UUID of the selected Service Endpoint.</param>
+            <param name="paramMetadataVersion">Metadata Version to be set for the selected Service Endpoint.</param>
+            <returns>Returns true if the Metadata Version property value is set for the Service Endpoint successfully, otherwise throws an exception with error details.</returns>
+        </member>
+        <member name="P:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.UUID">
+            <summary>
+            Property to get the UUID property value for the selected Service Endpoint by the user.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.ProtocolType">
+            <summary>
+            Property to get the Service Protocol Type property value for the selected Service Endpoint by the user.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.PortNumber">
+            <summary>
+            Property to get the Port Number property value for the selected Service Endpoint by the user.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.Type">
+            <summary>
+            Property to get/modify the Type property value for the selected Service Endpoint by the user.
+            Maximum length of the "Type" string shall be 16 characters.
+            The value passed to set this property value shall not be null or empty.
+            </summary>
+            <exception cref="T:System.ArgumentException">Value passed is null or empty or exceeding the maximum allowed length of Type property.</exception>
+            <exception cref="T:System.InvalidOperationException">Error encountered while updating the Type property.</exception>
+        </member>
+        <member name="P:Crestron.SimplSharp.ServiceEndpoint.ServiceEndpoint.MetadataVersion">
+            <summary>
+            Property to get/modify the Metadata Version property value for the specified Service Endpoint by the user.
+            Value 0 not valid.
+            </summary>
+            <exception cref="T:System.ArgumentException">Value passed to set Metadata Version property is 0.</exception>
+            <exception cref="T:System.InvalidOperationException">Error encountered while updating the Metadata Version property.</exception>
+        </member>
+    </members>
+</doc>

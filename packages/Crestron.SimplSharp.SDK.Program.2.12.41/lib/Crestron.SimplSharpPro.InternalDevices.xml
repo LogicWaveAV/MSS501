@@ -1,0 +1,1861 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Crestron.SimplSharpPro.InternalDevices</name>
+    </assembly>
+    <members>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs">
+            <summary>
+            Extender class to provide access to the Application Control Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new ApplicationControl Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseOpenApplication">
+            <summary>
+            Method to close or open the Application.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.HideOpenApplication">
+            <summary>
+            Method to hide or show the currently running third party application.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.StartVncClient">
+            <summary>
+            Method to start VNC client.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.OpenBrowser">
+            <summary>
+            Method to open the Browser.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseBrowser">
+            <summary>
+            Method to close the the Browser.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserGoHome">
+            <summary>
+            Method to go to Browser Home page.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOn">
+            <summary>
+            Method to set the Browser Kiosk On.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOff">
+            <summary>
+            Method to set the Browser Kiosk Off.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the ApplicationControl extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseOpenApplicationFeedback">
+            <summary>
+            Property to indicate the close or open status of the Application.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseOpenApplicationFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.HideOpenApplicationFeedback">
+            <summary>
+            Property to indicate the hide or show status the currently running third party application
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseOpenApplicationFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientConnectedFeedback">
+            <summary>
+            Property to indicate that the VNC client connected.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientConnectedFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientDisconnectedFeedback">
+            <summary>
+            Property to indicate that the VNC client disconnected.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientDisconnectedFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.OpenBrowserFeedback">
+            <summary>
+            Method to indicate that the Browser is open.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.OpenBrowserFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseBrowserFeedback">
+            <summary>
+            Property to indicate that the Browser is closed.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.CloseBrowserFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOnFeedback">
+            <summary>
+            Property to indicate that the Browser Kiosk is On.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOffFeedback">
+            <summary>
+            Property to indicate that the Browser Kiosk is Off.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserKioskOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientUrl">
+            <summary>
+            Property to set VNC Client URL.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientUrlFeedback">
+            <summary>
+            Property to return the current VNC Client URL.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.VncClientUrlFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserHomepage">
+            <summary>
+            Property to set the Browser Homepage.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserHomepageFeedback">
+            <summary>
+            Property to report the current Browser Homepage.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserHomepageFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs.BrowserUrl">
+            <summary>
+            Property to set the Browser URL.
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs">
+            <summary>
+            Extender class to provide access to the Bluetooth Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new ApplicationControl Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialPlus">
+            <summary>
+            Method to dial digit "+".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial0">
+            <summary>
+            Method to dial digit "0".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial1">
+            <summary>
+            Method to dial digit "1".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial2">
+            <summary>
+            Method to dial digit "2".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial3">
+            <summary>
+            Method to dial digit "3".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial4">
+            <summary>
+            Method to dial digit "4".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial5">
+            <summary>
+            Method to dial digit "5".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial6">
+            <summary>
+            Method to dial digit "6".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial7">
+            <summary>
+            Method to dial digit "7".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial8">
+            <summary>
+            Method to dial digit "8".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Dial9">
+            <summary>
+            Method to dial digit "9".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialAsterisk">
+            <summary>
+            Method to dial an asterisk.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialPound">
+            <summary>
+            Method to dial a pound sign "#".
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Backspace">
+            <summary>
+            Method to issue a backspace on the current dialed number.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Clear">
+            <summary>
+            Method to clear the entire dial string.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialCurrentNumber">
+            <summary>
+            Method to dial the current number string in the buffer.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Answer">
+            <summary>
+            Method to answer an incoming call.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Hangup">
+            <summary>
+            Method to terminate the current call or reject any incoming call.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.StartPairing">
+            <summary>
+            Method to start pairing. In this mode, the device will be in a discoverable mode.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.StopPairing">
+            <summary>
+            Method to stop pairing.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.UnpairAllDevices">
+            <summary>
+            Method to unpair all the devices which are currently paired.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Ignore">
+            <summary>
+            Method to ignore the current call. In this mode, an incoming call is unanswered and the local ring will be turned off
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Transfer">
+            <summary>
+            Method to transfer the current call's audio back to the paired device.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the ApplicationControl extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Mute">
+            <summary>
+            Property to mute/unmute the current calls
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DeviceName">
+            <summary>
+            Property to set the name of the bluetooth device.
+            The maximum length for the device name is restricted to 8 characters.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialString">
+            <summary>
+            Property to set the dial string for the DTMF tones
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.CallNoneFeedback">
+            <summary>
+            Property to indicate that a call is not in progress.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.OutgoingCallFeedback">
+            <summary>
+            Property to indicate that we have an outgoing call.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.IncomingCallFeedback">
+            <summary>
+            Property to indicate that we have an incoming call
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.CallActiveFeedback">
+            <summary>
+            Property to indicate that the call is active
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.PairFeedback">
+            <summary>
+            Property to indicate that the device is or is not currently paired with another device.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.RemoteName">
+            <summary>
+            Property to indicate the name of the remote party call.Will be cleared at the termination of the call.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.RemoteNumber">
+            <summary>
+            Property to indicate the remote caller number.Will be cleared at the termination of the call.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DialBuffer">
+            <summary>
+            Property to report the dial buffer. Will be cleared at the termination of a call 
+            or by using the <see cref="M:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.Clear"/> method.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.PairedDeviceName">
+            <summary>
+            Property to report paired device name.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DeviceNameFeedback">
+            <summary>
+            Property to return the name of the bluetooth device.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DeviceStateFeedback">
+            <summary>
+            Property to indicate the device state.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.UShortChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs.DeviceStateFeedback"/>.</para>
+            <para>The valid values are</para>
+            <list type="bullet">
+            <item>
+            <description> 0 - Driver not available</description>
+            </item>
+            <item>
+            <description> 1 - No device paired</description>
+            </item>
+            <item>
+            <description> 2 - Device is paired. Not active, No music</description>
+            </item>
+            <item>
+            <description> 3 - Device is paired and music playing</description>
+            </item>
+            <item>
+            <description> 4 - Indicates an incoming call</description>
+            </item>
+            <item>
+            <description> 5 - Indicates that we are making an outgoing call</description>
+            </item>
+            <item>
+            <description> 6 - Indicates that the far end is ringing</description>
+            </item>
+            <item>
+            <description> 7 - Indicates that we are on a call</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs">
+            <summary>
+            Extender class to provide access to the Audio Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new Audio Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOn">
+            <summary>
+            Method to turn on the speakers.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOff">
+            <summary>
+            Method to turn off the speakers.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickOn">
+            <summary>
+            Method to turn key click on.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickOff">
+            <summary>
+            Method to turn key click off.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicOn">
+            <summary>
+            Turns on mic audio.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicOff">
+            <summary>
+            Turns off mic audio.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the Sigs of the Audio extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOnFeedback">
+            <summary>
+            Property to indicate the speaker audio is enabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOffFeedback">
+            <summary>
+            Property to indicate the speaker audio is disabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolumeUp">
+            <summary>
+            Property to raise the speaker volume by 1% if input is true. This property has no effect once the volume reaches 100%.
+            If the property remains true the volume will auto-increment until the property is set to false or until the maximum volume is reached.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolumeDown">
+            <summary>
+            Property to lower the speaker volume by 1%. This property has no effect once the volume reaches 0%.
+            If the property remains true the volume will auto-decrement until the property is set to false or until the volume reaches 0%.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickOnFeedback">
+            <summary>
+            Property to indicate key click is on.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickOffFeedback">
+            <summary>
+            Property to indicate key click is off.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickVolumeUp">
+            <summary>
+            Property to raise the key click volume by 1% if input is true. This property has no effect once the volume reaches 100%.
+            If the property remains true the volume will auto-increment until the property is set to false or until the maximum volume is reached.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickVolumeDown">
+            <summary>
+            Property to lower the key click volume by 1%. This property has no effect once the volume reaches 0%.
+            If the property remains true the volume will auto-decrement until the property is set to false or until the volume reaches 0%.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolume">
+            <summary>
+            Property to set the speaker volume level.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolumeFeedback">
+            <summary>
+            Property to report the speaker volume level.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.UShortChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolumeFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickVolume">
+            <summary>
+            Property to set the key click volume level.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.KeyClickVolumeFeedback">
+            <summary>
+            Property to report the key click volume level.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.UShortChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.AllAudioVolumeFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicOnFeedback">
+            <summary>
+            Indicates that mic audio is on. The feedback remains true for as long as mic audio is on.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicOffFeedback">
+            <summary>
+            Indicates that mic audio is off. The feedback remains true for as long as mic audio is off.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicVolume">
+            <summary>
+            Sets the mic volume level.
+            <para>Valid values range from 0% (mute mic input) to 100% (maximum mic volume).</para>
+            Use <see cref="M:Crestron.SimplSharpPro.DeviceSupport.SimplSharpDeviceHelper.PercentToUshort(System.Single)"/> to convert
+            the percentage to a ushort value or <see cref="M:Crestron.SimplSharpPro.DeviceSupport.SimplSharpDeviceHelper.UshortToPercent(System.UInt16)"/> to convert
+            the ushort value to percentage.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs.MicVolumeFeedback">
+            <summary>
+            Reports the mic volume level.
+            <para>The reported level is the value that is set via the mic volume analog input, or adjusted via the mic volume up/down digital inputs.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs">
+            <summary>
+            Extender class to provide access to the System2 Reserved Sigs feature of the FT-TS600 Family Touch Panels.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new System2 Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the System2 extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs.DisablePopUpMessage">
+            <summary>
+            Property to disable the system pop up message
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs.DisablePopUpMessageFeedback">
+            <summary>
+            Property to indicate that the system pop up message is disabled
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs">
+            <summary>
+            Extender class to provide access to the System Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new System Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.LcdBacklightOff">
+            <summary>
+            Method to turn on the LCD backlight.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOn">
+            <summary>
+            Method to turn on the LCD backlight and HDMI Out.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOff">
+            <summary>
+            Method to turn off the LCD backlight and HDMI out. This results in a black screen.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.EnterSetup">
+            <summary>
+            Method to display the Setup menu.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the Sigs of the System extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOnFeedback">
+            <summary>
+            Property to indicate that the LCD backlight is on.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOffFeedback">
+            <summary>
+            Property to indicate that the LCD backlight is off.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.BacklightOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.StandbyTimeoutUp">
+            <summary>
+            Property to increment the standby timeout by one minute.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.StandbyTimeoutDown">
+            <summary>
+            Property to decrement the standby timeout by one minute.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.StandbyTimeout">
+            <summary>
+            Property to set the standby timeout in minutes. The standby timeout is the period from the last use of the 
+            touchscreen before going into standby mode (screen display is off but power is on).
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.StandbyTimeoutFeedback">
+            <summary>
+            Property to report the standby timeout period.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.UShortChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.StandbyTimeoutFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.HardkeyBankAColor">
+            <summary>
+            Property to set the LED color of the Bank A. 
+            Valid values are as follows:
+            0d = Off
+            1d = Green
+            2d = Red
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.HardkeyBankBColor">
+            <summary>
+            Set the color for the bank B LED's. 0 = Off, 1 = Green, and 2 = Red.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.HardkeyBankBColorFeedback">
+            <summary>
+            Get the color of the bank B buttons as reported by the device. 0 = Off, 1 = Green, and 2 = Red.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.UShortChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.HardkeyBankBColorFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.HardkeyBankAColorFeedback">
+            <summary>
+            Property to track the value of the Bank A LED color.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.GreenBrightness">
+            <summary>
+            Property to set the green color backlight brightness.
+            Valid values range from 0% (minimum brightness) to 100% (maximum brightness).
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.GreenBrightnessFeedback">
+            <summary>
+            Property to report the green color backlight brightness.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.RedBrightness">
+            <summary>
+            Property to set the red color backlight brightness.
+            Valid values range from 0% (minimum brightness) to 100% (maximum brightness).
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.RedBrightnessFeedback">
+            <summary>
+            Property to report the red color backlight brightness.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.GreenBrightnessUp">
+            <summary>
+            Property to raise the green backlight brightness by 1%. If the property value remains true for 0.5 seconds the brightness will 
+            auto-increment until the property value becomes false or until it reaches the maximum value of 100%.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.GreenBrightnessDown">
+            <summary>
+            Property to lower the green backlight brightness by 1%. If the property value remains true for 0.5 seconds the brightness will
+            auto-adjust until the the property value becomes false or until it reaches the minimum value of 0%.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.RedBrightnessUp">
+            <summary>
+            Property to raise the red backlight brightness by 1%. If the property value remains true for 0.5 seconds the brightness will 
+            auto-increment until the property value becomes false or until it reaches the maximum value of 100%.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystemReservedSigs.RedBrightnessDown">
+            <summary>
+            Property to lower the red backlight brightness by 1%. If the property value remains true for 0.5 seconds the brightness will
+            auto-adjust until the the property value becomes false or until it reaches the minimum value of 0%.
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs">
+            <summary>
+            Extender class to provide access to the Authentication Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new Authentication Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.Login">
+            <summary>
+            Method to login.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.Logout">
+            <summary>
+            Method to logout.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the Sigs of the Authentication extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AuthenticationOnFeedback">
+            <summary>
+            Property to indicate that the authentication is On. 
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AuthenticationOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AuthenticatedFeedback">
+            <summary>
+            Property to indicate that the authentication is successfully completed.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AuthenticatedFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.NotAuthenticatedFeedback">
+            <summary>
+            Property to indicate that the authentication is not completed.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.NotAuthenticatedFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AdminFeedback">
+            <summary>
+            Property to indicate that the admin feedback is received.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.AdminFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.NoAdminFeedback">
+            <summary>
+            Property to indicate that no admin feedback is received.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.NoAdminFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.UserName">
+            <summary>
+            Property to set the user name.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.UserNameFeedback">
+            <summary>
+            Property to return the current user name.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.UserNameFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.Password">
+            <summary>
+            Property to set the password.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.UserGroupsFeedback">
+            <summary>
+            Property to return the user groups.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs.UserGroupsFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs">
+            <summary>
+            Extender class to provide access to the System3 Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new System3 Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the Sigs of the System3 extender
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.OsdUserProjectFeedback">
+            <summary>
+            Property to set OSD User Project.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.OsdUserProjectFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.ProximitySensorActive">
+            <summary>
+            Report if the proximity sensor is active.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.OsdUserProjectNameTextFeedback">
+            <summary>
+            Property to set OSD User Project Name.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.OsdUserProjectNameTextFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.ProximitySensorForceAwake">
+            <summary>
+            Property to force the proximity sensor to always be awake.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs.ProximitySensorForceOff">
+            <summary>
+            Property to force the proximity sensor to always be off.
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs">
+            <summary>
+            Extender class to provide access to the ScreenSaver Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new ScreenSaver Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the ScreenSaver extender.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOn">
+            <summary>
+            Property to enable the screensaver feature.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOnFeedback">
+            <summary>
+            Property to indicate that the screensaver feature is enabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOff">
+            <summary>
+            Property to disable the screensaver feature.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOffFeedback">
+            <summary>
+            Property to indicate that the screensaver feature is disabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOn">
+            <summary>
+            Property to enable time display in 24-hour format.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOnFeedback">
+            <summary>
+            Property to indicate that the clock display is in 24-hour format.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOff">
+            <summary>
+            Property to disable time display in 24-hour format.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOffFeedback">
+            <summary>
+            Property to indicate that the clock display is not in 24-hour format.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TwentyFourHourClockOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOn">
+            <summary>
+            Property to enable the feature to display the temperature with tenths of a degree.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOnFeedback">
+            <summary>
+            Property to indicate the temperature is displayed with tenths of a degree.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOnFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOff">
+            <summary>
+            Property to enable the feature to display the temperature in whole numbers only without tenths of a degree.  
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOffFeedback">
+            <summary>
+            Property to indicate the temperature is displayed in whole numbers only.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureTenthsOffFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureA">
+            <summary>
+            Property to set an optional temperature value A along with the time. Any signed decimal value.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureB">
+            <summary>
+            Property to set an optional temperature value B along with the time.  Any signed decimal value.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreensaverDisplayText">
+            <summary>
+            Property to set an optional second text string to be displayed with the time; this text string is displayed 
+            directly below the top text string as defined by the sig.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.TemperatureScale">
+            <summary>
+            Property to set the temp scale. “C”, “F”, or “K” are valid values.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs.ScreenSaverTopDisplayText">
+            <summary>
+            Property to set an optional text string to be displayed with the time; this text string is displayed directly 
+            above the bottom text string as defined by the sig. 
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs">
+            <summary>
+            Extender class to provide access to the Touch Detection Reserved Sigs feature of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Digital Graphics Engines.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.#ctor(Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Constructor to generate new ScreenSaver Reserved Sigs
+            </summary>
+            <param name="paramParentDevice">Device this extender is on.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.ResetActivityTimer">
+            <summary>
+            Method to set the <see cref="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.TouchActivityFeedback"/> to false.This method takes precedence if period specified by <see cref="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.Time"/> has not elapsed.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the Touch Detection extender.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.TouchActivityFeedback">
+            <summary>
+            Property to report that touch activity is detected on the touch screen or a hard button. This property value remains 'true' for the period defined in <see cref="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.Time"/>.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/> and <see cref="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.TouchActivityFeedback"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.Time">
+            <summary>
+            Property to specify the amount of time, in seconds, that <see cref="P:Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs.TouchActivityFeedback"/> is to remain true after a touch event has been detected.
+            Valid values range from 0 to 300, where 1 = 1 second.
+            </summary>
+            <remarks>This value will not be affected by a reboot.</remarks>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.Mercury">
+             <summary>
+             Mercury Device.
+             <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.GenericBase.BaseEvent"/>,
+             <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/>, <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/>,
+             <see cref="E:Crestron.SimplSharpPro.DM.ConnectedDeviceInformation.DeviceInformationChange"/>,
+             <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> and "AirMediaInputSlot.AirMediaChange" and
+             <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> events.</para>
+             </summary>
+             <example>
+             <code>
+             static Mercury _mercury;
+            
+                public ControlSystemDge100()
+                {
+                    //Register console commands
+                    CrestronConsole.AddNewConsoleCommand(CreateDeviceCmd, "CreateDevice", "This is a Mercury CreateDevice command", ConsoleAccessLevelEnum.AccessOperator);
+                    CrestronConsole.AddNewConsoleCommand(AllAudioToggleCmd, "AllAudioToggle", "This is a Mercury AllAudioToggle command", ConsoleAccessLevelEnum.AccessOperator);
+                }
+            
+                public void CreateDeviceCmd(String args)
+                {
+                    //Initialize the Mercury device for Ethernet Communication.
+                    _mercury = new Mercury(0x18, this);
+            
+                    _mercury.ExtenderAuthenticationReservedSigs.Use();
+            
+                    _mercury.BaseEvent += MercuryEventHandler;
+            
+                    _mercury.HdmiIn.VideoAttributes.AttributeChange += Mercury_VideoAttributeEventHandler;
+                    _mercury.HdmiIn.StreamCec.CecChange += MercuryCecChangeEventHandler;
+                    _mercury.HdmiIn.StreamChange += Mercury_StreamChangeEventHandler;
+            
+                    _mercury.HdmiOut.VideoAttributes.AttributeChange += Mercury_VideoAttributeEventHandler;
+                    _mercury.HdmiOut.StreamCec.CecChange += MercuryCecChangeEventHandler;
+                    _mercury.HdmiOut.StreamChange += Mercury_StreamChangeEventHandler;
+                    _mercury.HdmiOut.ConnectedDevice.DeviceInformationChange += Mercury_DeviceInfoChangeEventHandler;
+            
+                    _mercury.UsbPort.UsbHidChange += Mercury_UsbHidChangeEventHandler;
+                    
+                    _mercury.AirMedia.AirMediaChange += new GenericEventHandler(Mercury_AirMedia_AirMediaChange); 
+            
+                    //Reserved sig handler initialization
+                    _mercury.ExtenderAuthenticationReservedSigs.DeviceExtenderSigChange += ExtenderAuthenticationReservedSigs_DeviceExtenderSigChange;
+            
+                    _mercury.Register();
+                }
+            
+                // Method to toggle the All Audio Toggle Sig value for Mercury.
+                public void AllAudioToggleCmd(String args)
+                {
+                    if (_mercury.ExtenderAudioReservedSigs.AllAudioOnFeedback.BoolValue)
+                    {
+                        CrestronConsole.ConsoleCommandResponse("Disable Audio\r\n");
+                        _mercury.ExtenderAudioReservedSigs.AllAudioOff();
+                    }
+                    else
+                    {
+                        CrestronConsole.ConsoleCommandResponse("Enable Audio\r\n");
+                        _mercury.ExtenderAudioReservedSigs.AllAudioOn();
+                    }
+                }
+            
+                // Sig callback used to read Authentication Control Reserved Sig information received from the Mercury.
+                static void ExtenderAuthenticationReservedSigs_DeviceExtenderSigChange(DeviceExtender currentDeviceExtender, SigEventArgs args)
+                {
+                    //Sig change for the extender
+                    if (args.Sig == _mercury.ExtenderAuthenticationReservedSigs.AuthenticationOnFeedback)
+                    {
+                        CrestronConsole.PrintLine("AuthenticationOnFeedback: {0}", args.Sig.BoolValue);
+                    }
+                }
+            
+                // Method to handle HDMI Out/In sig change events for Mercury Device.
+                static void MercuryEventHandler(GenericBase device, BaseEventArgs args)
+                {
+                    if (device.ID == 4)
+                    {
+                        CrestronConsole.PrintLine("HdmiIn");
+                    }
+                    else if (device.ID == 5)
+                    {
+                        CrestronConsole.PrintLine("HdmiOut");
+                    }
+            
+                    if (args.EventId == DMInputEventIds.SourceSyncEventId)
+                    {
+                        CrestronConsole.PrintLine("Sync detected on Mercury, SyncDetectedFeedback value is {0}", _mercury.HdmiIn.SyncDetectedFeedback.BoolValue);
+                    }
+                    else if (args.EventId == DMOutputEventIds.SyncDetectedEventId)
+                    {
+                        CrestronConsole.PrintLine("Sync detected on Mercury, SyncDetectedFeedback value is {0}", _mercury.HdmiOut.SyncDetectedFeedback.BoolValue);
+                    }
+                }
+            
+                // Method to handle USB HID sig change events for Mercury Device.
+                static void Mercury_UsbHidChangeEventHandler(UsbHidPort port, UsbHidEventArgs args)
+                {
+                    if (args.EventId == UsbHidEventIds.DeviceDetectedEventId)
+                    {
+                        CrestronConsole.PrintLine("{0} device Device Detected Feedback Event Occurred\r\n", _mercury.UsbPort.ToString());
+                    }
+                }
+            
+                // Method to handle HDMI Out Device Info sig change events for Mercury Device.
+                static void Mercury_DeviceInfoChangeEventHandler(ConnectedDeviceInformation device, ConnectedDeviceEventArgs args)
+                {
+                    if (args.EventId == ConnectedDeviceEventIds.ManufacturerEventId)
+                    {
+                        CrestronConsole.PrintLine("{0} device Manufacturer Name Feedback Event Occurred\r\n", _mercury.HdmiOut.ConnectedDevice.ToString());
+                    }
+                }
+            
+                // Method to handle HDMI Out/In Stream sig change events for Mercury Device.
+                static void Mercury_StreamChangeEventHandler(Stream stream, StreamEventArgs args)
+                {
+                    if (args.EventId == DMInputEventIds.AudioFormatEventId)
+                    {
+                        CrestronConsole.PrintLine("{0} device Audio Format Feedback Event Occurred\r\n", stream.ToString());
+                    }
+                }
+            
+                // Method to handle HDMI Out/In VideoAttribute sig change events for Mercury Device.
+                static void Mercury_VideoAttributeEventHandler(object sender, GenericEventArgs args)
+                {
+                    if (args.EventId == VideoAttributeEventIds.HorizontalResolutionFeedbackEventId)
+                    {
+                        CrestronConsole.PrintLine("{0} device Horizontal Resolution Feedback Event Occurred\r\n", sender.ToString());
+                    }
+                }
+            
+                // Method to handle HDMI Out/In CEC sig change events for Mercury Device.
+                static void MercuryCecChangeEventHandler(Cec device, CecEventArgs args)
+                {
+                    if (args.EventId == CecEventIds.ErrorFeedbackEventId)
+                    {
+                        CrestronConsole.PrintLine(string.Format("Device: {0} - Cec Error Detected Status: {1}", _mercury.ToString(), _mercury.HdmiOut.StreamCec.ErrorFeedback.BoolValue));
+                    }
+                }
+                
+                 public void Mercury_AirMedia_AirMediaChange(object sender, GenericEventArgs args)
+                 {
+                     
+                 }
+             </code>
+             </example>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.Mercury._usb">
+            <summary>
+            Reference to the USB object.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.Mercury._hdmiIn">
+            <summary>
+            Reference to the HDMI In object.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.Mercury._hdmiOut">
+            <summary>
+            Reference to the HDMI Out object.
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.Mercury._airMediaSlot">
+            <summary>
+            Air Media Input slot
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> that uses Ethernet as interface.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The ethernet ID specified is in use or invalid.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem,System.String)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> that uses Ethernet as interface.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+            <param name="paramName">Name of the device.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The ethernet ID specified is in use or invalid.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.InitializeExtender(Crestron.SimplSharpPro.UI.MercuryApplicationControlReservedSigs,Crestron.SimplSharpPro.UI.MercuryAudioReservedSigs,Crestron.SimplSharpPro.DeviceSupport.TsxCcsUcCodec100EthernetReservedSigs,Crestron.SimplSharpPro.UI.MercurySystemReservedSigs,Crestron.SimplSharpPro.UI.MercurySystem3ReservedSigs,Crestron.SimplSharpPro.UI.MercuryScreenSaverReservedSigs,Crestron.SimplSharpPro.UI.MercuryAuthenticationReservedSigs,Crestron.SimplSharpPro.UI.DgeTpmcRemoteAnnotationReservedSigs,Crestron.SimplSharpPro.UI.MercuryTouchDetectionReservedSigs,Crestron.SimplSharpPro.DeviceSupport.AutoUpdateReservedSigs,Crestron.SimplSharpPro.UI.MercurySystem2ReservedSigs,Crestron.SimplSharpPro.UI.MercuryBluetoothReservedSigs,Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs,Crestron.SimplSharpPro.DeviceSupport.Tss752VoipReservedSigs)">
+            <summary>
+            Initialize all <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> Extenders.
+            </summary>
+            <param name="paramTouchscreenApplicationControlReservedSigs"> Extender for <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> Application Control  reserved Sigs.</param>
+            <param name="paramTouchscreenAudioExtender"> Extender for  Audio reserved Sigs.</param>
+            <param name="paramTouchscreenEthernetExtender"> Extender for  Ethernet reserved Sigs.</param>
+            <param name="paramTouchscreenSystemExtender"> Extender for  System reserved Sigs.</param>
+            <param name="paramTouchscreenSystem3Extender"> Extender for System3 reserved Sigs.</param>
+            <param name="paramTouchScreenScreenSaverExtender"> Extender for  Screen Saver reserved Sigs.</param>
+            <param name="paramAuthenticationExtender">Extender for  Authentication reserved Sigs.</param>
+            <param name="paramDvp4AnnotationExtender">Extender for  DVP4 Annotation reserved Sigs.</param>
+            <param name="paramTouchDetectionExtender">Extender for  Touch Detection reserved Sigs.</param>
+            <param name="paramAutoUpdateExtender">Extender for Auto Update reserved Sigs.</param>
+            <param name="paramSystem2Extender">Extender for system 2</param>
+            <param name="paramBluetoothExtender">Bluetooth extender </param>
+            <param name="paramInternalMercuryExtender"> Internal Mercury extender</param>
+            <param name="paramVoipReservedExtender"> VOIP reserved extender</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.InitializeDevice(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem)">
+            <summary>
+            Method to initialize all the SubClass and Extender Sigs of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>  Devices.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.Dge100HdmiInOut_SigChange(Crestron.SimplSharpPro.CrestronDeviceWithEvents,Crestron.SimplSharpPro.SigEventArgs)">
+            <summary>
+            Method to handle the <see cref="T:Crestron.SimplSharpPro.UI.Mercury">Mercury's</see> <see cref="P:Crestron.SimplSharpPro.UI.Mercury.HdmiIn"/> and <see cref="P:Crestron.SimplSharpPro.UI.Mercury.HdmiOut"/> SubClass Sig change events.
+            EventIds for this event are located in the <see cref="T:Crestron.SimplSharpPro.DM.DMInputEventIds"/>, <see cref="T:Crestron.SimplSharpPro.DM.DMOutputEventIds"/>, 
+            <see cref="T:Crestron.SimplSharpPro.DM.VideoAttributeEventIds"/>, <see cref="T:Crestron.SimplSharpPro.DM.ConnectedDeviceEventIds"/> and <see cref="T:Crestron.SimplSharpPro.DM.CecEventIds"/>  classes.
+            </summary>
+            <param name="currentDevice">Current <see cref="T:Crestron.SimplSharpPro.UI.Mercury">Mercury's</see> <see cref="P:Crestron.SimplSharpPro.UI.Mercury.HdmiIn"/> or <see cref="P:Crestron.SimplSharpPro.UI.Mercury.HdmiOut"/> Internal SubClass device.</param>
+            <param name="args">Sig Event Arguments.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.Dge100Usb_SigChange(Crestron.SimplSharpPro.CrestronDeviceWithEvents,Crestron.SimplSharpPro.SigEventArgs)">
+            <summary>
+            Method to handle the <see cref="T:Crestron.SimplSharpPro.UI.Mercury">Mercury's</see> <see cref="P:Crestron.SimplSharpPro.UI.Mercury.UsbPort"/> SubClass Sig change events.
+            EventIds for this event are located in the <see cref="T:Crestron.SimplSharpPro.DM.UsbHidEventIds"/> class.
+            </summary>
+            <param name="currentDevice">Current <see cref="T:Crestron.SimplSharpPro.UI.Mercury">Mercury's</see> <see cref="P:Crestron.SimplSharpPro.UI.Mercury.UsbPort"/> Internal SubClass device.</param>
+            <param name="args">Sig Event Arguments.</param>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderVoipReservedSigs">
+            <summary>
+            Property to access the VOIP functionality of the Mercury device.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderInternalMercuryReservedSigs">
+            <summary>
+            Property to access the hidden properties of the Mercury device.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderAudioReservedSigs">
+            <summary>
+            Property to access the Audio functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderEthernetReservedSigs">
+            <summary>
+            Property to access the Ethernet functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderSystemReservedSigs">
+            <summary>
+            Property to access the System functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderSystem3ReservedSigs">
+            <summary>
+            Property to access the System3 functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderScreenSaverReservedSigs">
+            <summary>
+            Property to access the Screen Saver functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderApplicationControlReservedSigs">
+            <summary>
+            Property to access the Application Control functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderAuthenticationReservedSigs">
+            <summary>
+            Property to access the Authentication functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderDvp4AnnotationReservedSigs">
+            <summary>
+            Property to access the DVP4 Annotation functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderTouchDetectionReservedSigs">
+            <summary>
+            Property to access the Touch Detection functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> .
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderAutoUpdateReservedSigs">
+            <summary>
+            Property to access the Auto Update functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderSystem2ReservedSigs">
+            <summary>
+            Property to access the System2 functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ExtenderBluetoothReservedSigs">
+            <summary>
+            Property to access the bluetooth functionality of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.IROutputPorts">
+            <summary>
+            Collection of <see cref="T:Crestron.SimplSharpPro.IROutputPort">IR output ports</see> on the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.NumberOfIROutputPorts">
+            <summary>
+            Number of <see cref="T:Crestron.SimplSharpPro.IROutputPort">IR output ports</see> this <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device supports.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.ComPorts">
+            <summary>
+             Collection of <see cref="T:Crestron.SimplSharpPro.ComPort">serial COM ports</see> on the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.NumberOfComPorts">
+            <summary>
+            Number of <see cref="T:Crestron.SimplSharpPro.ComPort">serial COM ports</see> this <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device supports.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.UsbPort">
+            <summary>
+            Get the <see cref="T:Crestron.SimplSharpPro.DM.UsbHidPort"/>.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DM.UsbHidPort.UsbHidChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.UsbHidEventIds"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.AirMedia">
+            <summary>
+            Return the <see cref="T:Crestron.DeviceSupport.Support.AirMediaInputSlot"/> for this device
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.HdmiIn">
+            <summary>
+            HDMI Input present on this <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.DMInputEventIds"/>, 
+            <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.VideoAttributeEventIds"/>, 
+            and <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.CecEventIds"/>.</para> 
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.HdmiOut">
+            <summary>
+            HDMI output present on this <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/> device
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.DMOutputEventIds"/>, 
+            <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/> with <see cref="T:Crestron.SimplSharpPro.DM.VideoAttributeEventIds"/>, 
+            <see cref="E:Crestron.SimplSharpPro.DM.ConnectedDeviceInformation.DeviceInformationChange"/> with 
+            <see cref="T:Crestron.SimplSharpPro.DM.ConnectedDeviceEventIds"/> and <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/> with 
+            <see cref="T:Crestron.SimplSharpPro.DM.CecEventIds"/>.</para> 
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.IsAirMediaLicensed">
+            <summary>
+            Property to indicate if AirMedia is licensed on this device
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.Mercury.IsHDMILicensed">
+            <summary>
+            Property to indicate if HDMI is licensed on this device
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.InternalAirMediaInputSlot.AirMediaLayout.#ctor(Crestron.SimplSharpProInternal.CrestronDevice,System.UInt32)">
+            <summary>
+            Device Constructor.
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="slotId"> slot Id</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.InternalAirMediaInputSlot.AirMediaOSD.#ctor(Crestron.SimplSharpProInternal.CrestronDevice,System.UInt32)">
+            <summary>
+            Device Constructor.
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="slotId"> slot Id</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem,System.Object)">
+            <summary>
+            Constructor used to add the device to the controller.
+            
+            </summary>
+            <param name="ipId">ID of this device</param>
+            <param name="owner">Control System to add to. Currently only supports 'this'.</param>
+            <param name="paramParent">The parent that a given object was added to.</param>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.PinpointUXInternalCommunication">
+             <summary>
+            Auto generated class for SamsungSmartTVCustom. 
+             </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.PinpointUXInternalCommunication.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Device Constructor.
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.Com.ComPort1">
+            <summary>
+            HW HandShaking Support: (None), RTS/CTS
+            Protocol Support: (RS232)
+            Stop Bit Support: 2, 1
+            Baud Rate Support: 300, 600, 1200, 1800, 2400, 3600, 4800, 7200, 9600, 14400, 19200, 28800, 38400, 57600, 115200
+            Data Bit Support: 8, 7
+            Parity Support: O, N, E
+            SW HandShaking Support: XON, (None)
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.Com.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice,System.Object)">
+            <summary>
+            Device Constructor.
+            
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+            <param name="paramParent">The parent that a given object was added to.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.HdmiIn.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Device Constructor.
+            
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.HdmiOut.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Device Constructor.
+            
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.Usb.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Device Constructor.
+            
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.Mercury.EthernetMercuryDevice.DmIn.#ctor(System.UInt32,Crestron.SimplSharpProInternal.CrestronDevice)">
+            <summary>
+            Device Constructor.
+            
+            </summary>
+            <param name="paramParentDevice">Device to add this device to.</param>
+            <param name="paramId">ID of this device.</param>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs">
+            <summary>
+            Extender class to provide access to the Internal  features of the <see cref="T:Crestron.SimplSharpPro.UI.Mercury"/>.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the Pinpoint UX extender.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.SIPEnable">
+            <summary>
+            Method to tell the device to enable SIP. 
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.SIPDisable">
+            <summary>
+            Method to tell the device to disable SIP. 
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.AudioRouteSelect">
+            <summary>
+            Property to select the audio route on the device.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.StreamingVideoResolutionFeedback">
+            <summary>
+            Property to report the resolution of the streaming video source.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.SerialNumberFeedback">
+            <summary>
+            Property to return the serial number for the mercury device
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.StreamingEngineOnlineFeedback">
+            <summary>
+            Property to report that the platform has reconnected to the streaming engine. The platform will pulse this everytime it reconnects
+            to the streaming engine.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.SIPEnabledFeedback">
+            <summary>
+            Property to report that the SIP has been enabled on the device.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalMercuryReservedSigs.SIPDisabledFeedback">
+            <summary>
+            Property to report that the SIP has been disabled on the device.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="T:CrestronSharp.LDAPSupport">
+            <summary>
+            Class to provide LDAP support.
+            </summary>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.#ctor">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.Connect(System.String,System.String,System.String,System.String)">
+            <summary>
+            Connects the specified domain.
+            </summary>
+            <param name="domain">The domain.</param>
+            <param name="userName">Name of the user.</param>
+            <param name="password">The password.</param>
+            <param name="serverPort">The LDAP server name and port number. Ex: www.myldapserver.com:389</param>
+            <returns>Connect results</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.ConnectStandalone(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Connects to standalone LDAP server (Without Kerberos)
+            </summary>
+            <param name="userName">Name of the user.</param>
+            <param name="password">The password.</param>
+            <param name="host">The LDAP server name</param>
+            <param name="port">The port number</param>
+            <returns>Connect results</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.Disconnect">
+            <summary>
+            Disconnects from the domain.
+            </summary>
+            <returns>Disconnect results</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.IsAuthenticated">
+            <summary>
+            Determines whether this instance is authenticated.
+            </summary>
+            <returns>Results</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.GetConnectedLdapHost">
+            <summary>
+            Gets the connected LDAP host.
+            </summary>
+            <returns>Results</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.Search(System.String,CrestronSharp.LDAPSupport.Scope,System.String,System.String[],System.Int32)">
+            <summary>
+            Search active directory for attributes
+            </summary>
+            <param name="baseDN">The base dn.</param>
+            <param name="scope">The scope.</param>
+            <param name="filter">The filter.</param>
+            <param name="attributes">The attributes.</param>
+            <param name="sizeLimit">The count limit for results.</param>
+            <returns>Search results as a string array</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.Search(CrestronSharp.LDAPSupport.Scope,System.String,System.String[],System.Int32)">
+            <summary>
+            Search active directory for attributes.
+            </summary>
+            <param name="scope">The scope.</param>
+            <param name="filter">The filter.</param>
+            <param name="attributes">The attributes.</param>
+            <param name="sizeLimit">The count limit for results.</param>
+            <returns>Search results as a string array</returns>
+        </member>
+        <member name="M:CrestronSharp.LDAPSupport.Search(System.String,System.String,System.String,System.String,System.String[],System.String,System.String,CrestronSharp.LDAPSupport.Scope)">
+            <summary>
+            Function to perform LDAP search with provided parameters.
+            </summary>
+            <param name="domain">The domain.</param>
+            <param name="userName">Name of the user for LDAP authentication.</param>
+            <param name="passwd">The password for LDAP authentication.</param>
+            <param name="filter">The filter.</param>
+            <param name="attributes">The array of attributes.</param>
+            <param name="baseDN">The base domain name.</param>
+            <param name="serverPort">The LDAP server name and port number. Ex: www.myldapserver.com:389</param>
+            <param name="scope">The scope.</param>
+            <returns>Search results as a string array, null if error</returns>
+            <example>
+            <code>
+            string[] attributes = { "attr=memberOf" };
+            string filter = "(&amp;(sAMAccountName=jdoe)(objectCategory=person)(objectClass=user))";
+            List &lt;string &gt; resultToCaller = CrestronSharp.LDAPSupport.Search("CRESTRON.CRESTRON.COM","jdoe","password",filter,attributes,"CRESTRON.CRESTRON.COM",LDAPSupport.Scope.LDAP_SCOPE_ONELEVEL);
+            </code>
+            </example>
+        </member>
+        <member name="T:CrestronSharp.LDAPSupport.Scope">
+            <summary>
+            LDAP Search Scope Enum
+            </summary>
+        </member>
+        <member name="F:CrestronSharp.LDAPSupport.Scope.LDAP_SCOPE_BASE">
+            <summary>
+            The LDAP scope base
+            </summary>
+        </member>
+        <member name="F:CrestronSharp.LDAPSupport.Scope.LDAP_SCOPE_ONELEVEL">
+            <summary>
+            The LDAP scope one level
+            </summary>
+        </member>
+        <member name="F:CrestronSharp.LDAPSupport.Scope.LDAP_SCOPE_SUBTREE">
+            <summary>
+            The LDAP scope subtree
+            </summary>
+        </member>
+        <member name="F:CrestronSharp.LDAPSupport.Scope.LDAP_SCOPE_SUBORDINATE">
+            <summary>
+            The LDAP scope subordinate
+            </summary>
+        </member>
+        <member name="F:CrestronSharp.LDAPSupport.Scope.LDAP_SCOPE_DEFAULT">
+            <summary>
+            The LDAP scope default
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.Internal.SimplSharpProSupport">
+            <summary>
+            Class to add extenders to the Crestron control syste.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.Internal.SimplSharpProSupport.IsRunningOnLinuxPlatform">
+            <summary>
+            Property to indicate if this controller is running on the Linux platform.
+            </summary>
+            <returns>'true' = On the Linux platform, 'false' otherwise.</returns>
+        </member>
+        <member name="T:Crestron.SimplSharp.SecureStorageException">
+            <summary>
+            Secure Storage Exception
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.SecureStorageException.#ctor(System.String)">
+            <summary>
+            Tag not found.
+            </summary>
+            <param name="message">Extended information about the exception.</param>
+        </member>
+        <member name="T:Crestron.SimplSharp.LinuxSecureDataStore">
+            <summary>
+            Secure DataStore for linux
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharp.LinuxSecureDataStore.Write(System.String,System.String)">
+            <summary>
+            Store encrpyted information to the device, using the specified tag.
+            </summary>
+            <param name="tag">Name of the internal storage location</param>
+            <param name="dataIn">Data to store securely. Note: this can not be null.</param>
+            <exception cref="T:System.Exception">The tag format follows the file name rules.</exception>
+            <exception cref="T:System.ArgumentNullException">dataIn can not be null.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.LinuxSecureDataStore.Read(System.String)">
+            <summary>
+            Read in information located at the specified secure storage tag. 
+            </summary>
+            <param name="tag">Tag that contains secure information on the device.</param>
+            <returns>Contents of the tag, decrypted.</returns>
+            <exception cref="T:Crestron.SimplSharp.SecureStorageException">Tag not found.</exception>
+            <exception cref="T:Crestron.SimplSharp.SecureStorageException">Error reading data.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharp.LinuxSecureDataStore.Delete(System.String)">
+            <summary>
+            Method to delete the storged information for the specified tag.
+            </summary>
+            <param name="tag">Tag to remove from the device.</param>
+            <exception cref="T:Crestron.SimplSharp.SecureStorageException">Incorrect tag format.</exception>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice">
+            <summary>
+            Standalone digital graphics engine device similar to DGE-100 with DM Input and USB HID Input.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.GenericBase.BaseEvent"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/>, <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.ConnectedDeviceInformation.DeviceInformationChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.Endpoints.EndpointInputStream.InputStreamChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> and
+            <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> events.</para>
+            </summary>
+            <example>
+            Refer DGE-100 example code.
+            </example>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice"/> that uses Ethernet as interface.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The ethernet ID specified is in use or invalid.</exception>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem,System.String)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice"/> that uses Ethernet as interface.
+            Internal constructor for the CCS-FF-2 device
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to</param>
+            <param name="deviceName">Control System this device is attached to.</param>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice.ExtenderInternalPinpointUXReservedSigs">
+            <summary>
+            Property to access the hidden properties of the Pinpoint UX.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs">
+            <summary>
+            Extender class to provide access to the Internal Pinpoint UX features of the <see cref="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice"/>.
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.InitializeJoins">
+            <summary>
+            Method to initialize the sigs of the Pinpoint UX extender.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.CameraCaptureOn">
+            <summary>
+            Method to enable motion detection for the USB camera.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.CameraCaptureOff">
+            <summary>
+            Method to disable motion detection for the USB camera.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.CameraConnectedFeedback">
+            <summary>
+            Property to report the USB camera status.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.CameraCaptureOnFeedback">
+            <summary>
+            Property to report if motion detection for the USB camera is enabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.CameraCaptureOffFeedback">
+            <summary>
+            Property to report if motion detection for the USB camera is disabled.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.BoolChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.StreamingVideoResolutionFeedback">
+            <summary>
+            Property to report the resolution of the streaming video source.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.InternalPinpointUXReservedSigs.SerialNumberFeedback">
+            <summary>
+            Property to return the serial number for the device.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.eSigEvent.StringChange"/>.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl">
+            <summary>
+            Display Control class for AM-X00 devices used by the Freeform
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.#ctor(Crestron.SimplSharpPro.GenericBase,Crestron.SimplSharpPro.CrestronDeviceWithEvents)">
+            <summary>
+            Creating a Freeform DisplayControl.
+            </summary>
+            <param name="paramParent">Device this is apart of.</param>
+            <param name="paramDevice">Internal slot device.</param>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.ActiveVideoOut">
+            <summary>
+            Property to set the video source for the HDMI output.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Value passed for active video source mode is not defined in the enum <see cref="T:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.eAirMediaX00VideoSource"/>.</exception>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.DigitalSignageState">
+            <summary>
+            Property to control the Digital Signage State.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Value passed for Digital Signage State is not defined in the enum <see cref="T:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.eAirMediaDigitalSignageState"/>.</exception>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.DigitalSignageStateFeedback">
+            <summary>
+            Property to report the Digital Signage State. 
+            <para>The <see cref="E:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.DisplayControlChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.DM.AirMedia.AmX00.DigitalSignageStateFeedbackEventId"/>.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.DigitalSignageUrl">
+            <summary>
+            Property to set the URL for the Digital Signage Content.
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.FreeformAmX00DisplayControl.DigitalSignageUrlFeedback">
+            <summary>
+            Property to report the URL for the Digital Signage Content.
+            <para>The <see cref="E:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.DisplayControlChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.DM.AirMedia.AmX00.DigitalSignageUrlFeedbackEventId"/>.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.CcsFf1">
+            <summary>
+            Standalone digital graphics engine device similar to DGE-100 with AirMedia and Pinpoint
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.GenericBase.BaseEvent"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/>, <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.ConnectedDeviceInformation.DeviceInformationChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.Endpoints.EndpointInputStream.InputStreamChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> and
+            <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> events.</para>
+            </summary>
+            <example>
+            Refer DGE-100 example code.
+            </example>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.CcsFf1._airMediaSlot">
+            <summary>
+            Air Media Input slot
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.CcsFf1._displayControl">
+            <summary>
+            Reference to the DisplayControl object.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.CcsFf1.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice"/> that uses Ethernet as interface.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The ethernet ID specified is in use or invalid.</exception>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf1.AirMedia">
+            <summary>
+            Return the <see cref="T:Crestron.DeviceSupport.Support.AirMediaInputSlot"/> for this device
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf1.ExtenderInternalPinpointUXReservedSigs">
+            <summary>
+            Property to access the hidden properties of the Pinpoint UX.
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> event.</para>
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf1.DisplayControl">
+            <summary>
+            Display Control present on this device
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.DisplayControlChange"/> with event IDs defined in <see cref="T:Crestron.SimplSharpPro.DM.AirMedia.AmX00"/>.</para>
+            </summary>
+        </member>
+        <member name="T:Crestron.SimplSharpPro.UI.CcsFf2">
+            <summary>
+            Standalone digital graphics engine device similar to Pinpoint bit with AirMedaia
+            <para>This class will trigger <see cref="E:Crestron.SimplSharpPro.GenericBase.BaseEvent"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.VideoAttributesBasic.AttributeChange"/>, <see cref="E:Crestron.SimplSharpPro.DM.Cec.CecChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.ConnectedDeviceInformation.DeviceInformationChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DM.Endpoints.EndpointInputStream.InputStreamChange"/>,
+            <see cref="E:Crestron.SimplSharpPro.DeviceSupport.Stream.StreamChange"/> and
+            <see cref="E:Crestron.SimplSharpPro.DeviceExtender.DeviceExtenderSigChange"/> events.</para>
+            </summary>
+            <example>
+            Refer DGE-100 example code.
+            </example>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.CcsFf2._airMediaSlot">
+            <summary>
+            Air Media Input slot
+            </summary>
+        </member>
+        <member name="F:Crestron.SimplSharpPro.UI.CcsFf2._displayControl">
+            <summary>
+            Reference to the DisplayControl object.
+            </summary>
+        </member>
+        <member name="M:Crestron.SimplSharpPro.UI.CcsFf2.#ctor(System.UInt32,Crestron.SimplSharpPro.CrestronControlSystem)">
+            <summary>
+            Constructor for <see cref="T:Crestron.SimplSharpPro.UI.PinpointUXInternalDevice"/> that uses Ethernet as interface.
+            </summary>
+            <param name="paramIpId">The ethernet ID of the card.</param>
+            <param name="paramControlSystem">Control System this device is attached to.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">The ethernet ID specified is in use or invalid.</exception>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf2.AirMedia">
+            <summary>
+            Return the <see cref="T:Crestron.DeviceSupport.Support.AirMediaInputSlot"/> for this device
+            </summary>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf2.SourceNoVideoFeedback">
+            <summary>
+            Indicated if a DM video source is present. 
+            <para>The <see cref="E:Crestron.SimplSharpPro.DM.Endpoints.EndpointInputStream.InputStreamChange"/> event will trigger with <see cref="F:Crestron.SimplSharpPro.DM.Endpoints.EndpointInputStreamEventIds.SourceNoVideoFeedbackEventId"/>.</para>
+            </summary>
+            <remarks>'true' means no video source is present, 'false' otherwise.</remarks>
+        </member>
+        <member name="P:Crestron.SimplSharpPro.UI.CcsFf2.DisplayControl">
+            <summary>
+            Display Control present on this device
+            <para>This property will trigger <see cref="E:Crestron.SimplSharpPro.DM.AirMedia.AmX00DisplayControl.DisplayControlChange"/> with event IDs defined in <see cref="T:Crestron.SimplSharpPro.DM.AirMedia.AmX00"/>.</para>
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask TaskName="Zip" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+		<ParameterGroup>
+		  <OutputFilename ParameterType="System.String" Required="true" />
+		  <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />
+		</ParameterGroup>
+		<Task>
+		  <Reference Include="System.IO.Compression" />
+		  <Using Namespace="System.IO.Compression" />
+		  <Code Type="Fragment" Language="cs"><![CDATA[
+		      try
+			  {
+				using (Stream zipStream = new FileStream(Path.GetFullPath(OutputFilename), FileMode.Create, FileAccess.Write))
+				using (ZipArchive archive = new ZipArchive(zipStream, ZipArchiveMode.Create))
+				{
+					foreach (ITaskItem fileItem in Files)
+					{
+						string filename = fileItem.ItemSpec;
+						using (Stream fileStream = new FileStream(filename, FileMode.Open, FileAccess.Read))
+						using (Stream fileStreamInZip = archive.CreateEntry(new FileInfo(filename).Name).Open())
+							fileStream.CopyTo(fileStreamInZip);
+					}
+				}
+				return true;
+			  }
+			  catch (Exception ex)
+			  {
+				Log.LogErrorFromException(ex);
+				return false;
+			  }
+		]]></Code>
+		</Task>
+	</UsingTask>
+
+    
+
+
+	<UsingTask TaskName="GenerateProgramInfo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+		<ParameterGroup>
+		  <OutputFilename ParameterType="System.String" Required="true" />
+		  <TargetPath ParameterType="System.String" Required="true" />
+		  <TargetName ParameterType="System.String" Required="true" />
+		</ParameterGroup>
+		<Task>
+		  <Reference Include="System.Xml" />
+		  <Reference Include="System.IO" />
+		  <Using Namespace="System.Xml" />
+		  <Using Namespace="System.IO" />
+		  <Using Namespace="System.Globalization" />
+		  <Code Type="Fragment" Language="cs"><![CDATA[
+			  try
+			  {
+
+				var xmlDoc = new XmlDocument();
+				var root = xmlDoc.CreateElement("ProgramInfo");
+				xmlDoc.AppendChild(root);
+
+				var required = xmlDoc.CreateElement("RequiredInfo");
+				root.AppendChild(required);
+
+				var node = xmlDoc.CreateElement("FriendlyName");
+				node.AppendChild(xmlDoc.CreateTextNode(TargetName.Length >  20 ? TargetName.Substring(0,20) : TargetName));
+				required.AppendChild(node);	
+
+				node = xmlDoc.CreateElement("SystemName");
+				node.AppendChild(xmlDoc.CreateTextNode(TargetName));
+				required.AppendChild(node);	
+
+				node = xmlDoc.CreateElement("EntryPoint");
+				node.AppendChild(xmlDoc.CreateTextNode(TargetName));
+				required.AppendChild(node);	
+
+				node = xmlDoc.CreateElement("DesignToolId");
+				node.AppendChild(xmlDoc.CreateTextNode("6"));
+				required.AppendChild(node);	
+
+				node = xmlDoc.CreateElement("ProgramToolId");
+				node.AppendChild(xmlDoc.CreateTextNode("6"));
+				required.AppendChild(node);	
+
+
+				FileInfo fileInfo = new FileInfo(TargetPath);
+
+				var optional = xmlDoc.CreateElement("Optional");
+				root.AppendChild(optional);
+
+				node = xmlDoc.CreateElement("CompiledOn");
+				node.AppendChild(xmlDoc.CreateTextNode(fileInfo.LastWriteTime.ToString("yyyy-MM-dd'T'HH:mm:ss.fffzzz", DateTimeFormatInfo.InvariantInfo)));
+				optional.AppendChild(node);
+
+				node = xmlDoc.CreateElement("CompilerRev");
+				node.AppendChild(xmlDoc.CreateTextNode("1"));
+				optional.AppendChild(node);
+					
+				xmlDoc.Save(OutputFilename);		
+
+				return true;
+			}
+		  catch (Exception ex)
+		  {
+			Log.LogErrorFromException(ex);
+			return false;
+		  }
+		
+		]]></Code>
+		</Task>
+	</UsingTask>
+
+	<Target Name="SimplSharpPreProcess" BeforeTargets="BeforeBuild">
+        <Delete Files="$(OutputPath)\$(TargetName).cpz" />
+		<ItemGroup>
+		  <Resources Include="$(SolutionDir)packages\Crestron.SimplSharp.SDK.Program.2.12.41\build\*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(Resources)"
+			  DestinationFiles="@(Resources->'$(OutDir)%(Filename).dll')"
+			  Condition="'%(Extension)'=='.dl_'">
+		  <Output TaskParameter="DestinationFiles" ItemName="FileWrites" />
+		</Copy>
+		<Copy SourceFiles="@(Resources)"
+			  DestinationFiles="@(Resources->'$(OutDir)%(Filename)%(Extension)')"
+			  Condition="'%(Extension)'!='.dl_' And '%(Extension)'!='.targets'">
+		  <Output TaskParameter="DestinationFiles" ItemName="FileWrites" />
+		</Copy>
+    </Target>
+	
+	<Target Name="SimplSharpPostProcess" BeforeTargets="AfterBuild">
+		<Exec Command="&quot;$(SolutionDir)packages\Crestron.SimplSharp.SDK.Program.2.12.41\tools\pdb2mdb.exe&quot; &quot;$(TargetPath)&quot;"
+		Condition="'$(OS)'!='Unix'"/>
+	
+		<GenerateProgramInfo OutputFilename="$(OutputPath)\ProgramInfo.config" TargetPath="$(TargetPath)" TargetName="$(TargetName)" />
+
+		<ItemGroup>
+			<ZipFiles Include="$(OutputPath)\*" />
+		</ItemGroup>
+		<Zip OutputFilename="$(OutputPath)\$(TargetName).cpz" Files="@(ZipFiles)" />
+	
+	</Target>
+
+</Project>
